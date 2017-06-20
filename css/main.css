@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+}
+
+body, html{
+  margin: 0;
+  padding: 0;
+}
+
+.butterfly{
+  background-image: url("../images/butterfly.jpg");
+}
+
+.cow{
+  background-image: url("../images/cow.jpg");
+}
+
+.flamingo{
+  background-image: url("../images/flamingo.jpg");
+}
+
+.kangaroo{
+  background-image: url("../images/kangaroo.jpg");
+}
+
+.owl{
+  background-image: url("../images/owl.jpg");
+}
+
+.whale{
+  background-image: url("../images/whale.jpg");
+}
+
+.panes{
+  height:100vh;
+  display:flex;
+}
+
+.pane{
+  flex:1;
+  height:100%;
+  background-size:cover;
+  background-position: center;
+  transition: 1s;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.pane:hover {
+  flex:5;
+}
+
+.pane:hover span{
+  color:rgba(255,255,255,1);
+  text-shadow: 1px 1px black;
+}
+
+span:first-child{
+  color:rgba(100,100,255,1);
+  text-shadow: 1px 1px black;
+}
+
+span{
+  text-align: center;
+  color:white;
+  color:rgba(255,255,255,0);
+  transition: 1s;
+  weight:bold;
+  font-family: "Helvetica";
+}
+
+.pane.selected{
+    background-image: url("../images/crocodile.jpg");
+}
